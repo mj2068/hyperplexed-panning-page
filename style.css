@@ -1,0 +1,138 @@
+body {
+  margin: 0;
+  padding: 0;
+  /* width: 100vw; */
+  /* tip: here if you only specify width explicitly, not the height, the body
+     will be 0 height, because, body itself is a block level element, it has
+     no height */
+  height: 100vh;
+  background-color: rgb(211, 191, 206);
+  overflow: hidden;
+  /* position: absolute; */
+}
+
+#container {
+  width: 200vmax;
+  height: 200vmax;
+  /* background-color: #111; */
+  position: absolute;
+}
+/* #container:hover > .box {
+  transition: scale 200ms;
+} */
+
+.box {
+  border-radius: 10px;
+  position: absolute;
+  transition: scale 200ms;
+}
+
+.box:hover {
+  scale: 1.05;
+  transition: scale 3000ms ease;
+}
+
+.box > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+  opacity: 0;
+  transition: opacity 200ms;
+}
+
+.box:hover > img {
+  opacity: 1;
+  transition: opacity 500ms;
+}
+
+.box:nth-child(1) {
+  width: 10%;
+  height: 10%;
+  left: 5%;
+  top: 5%;
+  background-color: rgb(255, 105, 105);
+}
+
+.box:nth-child(2) {
+  width: 16%;
+  height: 10%;
+  left: 24%;
+  top: 14%;
+  background-color: rgb(52, 216, 238);
+}
+
+.box:nth-child(3) {
+  width: 10%;
+  height: 14%;
+  left: 55%;
+  top: 10%;
+  background-color: rgb(230, 54, 200);
+}
+
+.box:nth-child(4) {
+  width: 13%;
+  height: 15%;
+  left: 80%;
+  top: 8%;
+  background-color: rgb(54, 230, 142);
+}
+
+.box:nth-child(5) {
+  width: 13%;
+  height: 15%;
+  left: 17%;
+  top: 30%;
+  background-color: rgb(200, 219, 21);
+}
+
+.box:nth-child(6) {
+  width: 20%;
+  height: 15%;
+  left: 60%;
+  top: 35%;
+  background-color: rgb(101, 33, 226);
+}
+
+.box:nth-child(7) {
+  width: 20%;
+  height: 20%;
+  left: 5%;
+  top: 60%;
+  background-color: rgb(223, 32, 73);
+}
+.box:nth-child(8) {
+  width: 16%;
+  height: 20%;
+  left: 36%;
+  top: 52%;
+  background-color: rgb(19, 224, 128);
+}
+.box:nth-child(9) {
+  width: 16%;
+  height: 16%;
+  left: 78%;
+  top: 60%;
+  background-color: rgb(139, 46, 3);
+}
+.box:nth-child(10) {
+  width: 18%;
+  height: 12%;
+  left: 32%;
+  top: 80%;
+  background-color: rgb(41, 1, 187);
+}
+.box:nth-child(11) {
+  width: 12%;
+  height: 20%;
+  left: 58%;
+  top: 75%;
+  background-color: rgb(231, 108, 7);
+}
+.box:nth-child(12) {
+  width: 12%;
+  height: 20%;
+  left: 40%;
+  top: 27%;
+  background-color: rgb(41, 1, 187);
+}
